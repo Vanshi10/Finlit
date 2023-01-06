@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sign In Page</title>
+  <style>
+    :root {
+      --greenish: #C8FFD4;
+      --stone: #2B2B2B;
+      --greyish: #D8D9CF;
+      --greyish-light: #EEEEEE;
+      --softle: #A555EC;
+      --font2: 'Michroma', sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--stone);
+      /* text-decoration: bold; */
+      font-weight: bolder;
+    }
+
+    body {
+      font-family: Arial;
+      background-color: var(--greyish);
+      margin: 0 auto;
+      padding: 0;
+      width: 500px;
+    }
+
+    .container {
+      border-radius: 10px;
+    }
+
+    form,
+    .content {
+      background-color: #f1f1f1;
+      padding: 20px;
+      margin: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    .message {
+      margin: 15px 0 0;
+      color: #b3b3b3;
+      font-size: 12px;
+    }
+
+    .message a {
+      color: #003366;
+      text-decoration: none;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    .error {
+      color: #FF0000;
+    }
+
+    img {
+      height: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 20%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>LogIn </h2>
+<!--   Using existing account  -->
+
+  <form action="../quiz/indexQ.html">
+    <div class="container">
+
+      <div class="content">
+        <label for="username">Username or Email Address:</label>          <br />
+        <input type="text" id="username" name="username" placeholder="Enter Username or Email address" required>
+        <br />
+        <label for="password">Password:</label>
+        <br />
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        <br />
+        <br />
+
+        <input type="submit" class="btn" value="Login">
+      </div>
+    </div>
+  </form>
+
+</body>
+
+</html>
